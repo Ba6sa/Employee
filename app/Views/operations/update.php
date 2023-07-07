@@ -22,7 +22,7 @@ $this->section('body');
     <div class="row">
         <div class="col">
             <div class="form-outline">
-                <input type="text" name="EmpAge" class="form-control" value="<?= $emp['emp_age']; ?>" required/>
+                <input type="number" name="EmpAge" class="form-control" pattern="[0-9]{1,}" value="<?= $emp['emp_age']; ?>" required/>
                 <label class="form-label" for="EmpAge">Age</label>
             </div>
         </div>

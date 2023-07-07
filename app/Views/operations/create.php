@@ -22,7 +22,7 @@ $activePage = basename($_SERVER['PHP_SELF'], '.php');
     <div class="row">
         <div class="col">
             <div class="form-outline">
-                <input type="text" id="EmpAge" name="EmpAge" class="form-control" required/>
+                <input type="number" id="EmpAge" name="EmpAge" class="form-control" pattern="[0-9]{1,}" required/>
                 <label class="form-label" for="EmpAge">Age</label>
             </div>
         </div>
